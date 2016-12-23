@@ -1,0 +1,38 @@
+include /../node_modules/bemto.jade/bemto
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		block title
+			title Заголовок
+		block description
+			meta(name="description" content="")
+		block keywords
+			meta(name="keywords" content="")
+
+		link(rel="stylesheet" href="_main.min.css")
+
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+		link(rel="shortcut icon" href="media/favicon/favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="media/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="media/favicon/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="media/favicon/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="media/favicon/apple-touch-icon-114x114.png")
+		
+	body
+		block content
+			//- Здесь пишем код 
+		.hidden
+			block popup
+
+		<!--[if lt IE 9]>
+		script(src="js/libs/html5shiv/es5-shim.min.js")
+		script(src="js/libs/html5shiv/html5shiv.min.js")
+		script(src="js/libs/html5shiv/html5shiv-printshiv.min.js")
+		script(src="js/libs/respond/respond.min.js")
+		<![endif]-->
+
+		script(src="js/vendor.js")
+		script(src="js/main.js")

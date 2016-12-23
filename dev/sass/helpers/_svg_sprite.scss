@@ -1,0 +1,30 @@
+.icon {
+    font-size: 10px;
+    &:before {
+      content:' ';
+      vertical-align:middle;
+      display: inline-block;
+      background-image: url("media/img/svg/sprite.svg");
+      background-repeat: no-repeat;
+      background-size: 8em 3.2em;
+
+      .no-svg & {
+        background-image: url("media/img/svg/sprite.png");
+      }
+    }
+}
+
+
+
+
+.icon_yandex {
+  &:before {
+      background-position: 0em 0em;
+      width: 8em;
+      height: 3.1787em;
+    }
+  }
+
+  @mixin icon-yandex(){
+    @extend .icon_yandex;
+  }

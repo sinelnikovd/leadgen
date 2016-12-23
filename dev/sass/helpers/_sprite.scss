@@ -1,0 +1,27 @@
+.sp-retina {
+  background-image: url(media/img/retina.png);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  .sp-retina {
+    background-image: url(media/img/retina@2x.png);
+    background-size: 68px 57px;
+  }
+}
+
+.sp-retina__arrow {
+  background-position: 0px -35px;
+  width: 15px;
+  height: 22px;
+}
+.sp-retina__blank {
+  background-position: 0px 0px;
+  width: 33px;
+  height: 35px;
+}
+.sp-retina__club {
+  background-position: -33px 0px;
+  width: 35px;
+  height: 22px;
+}

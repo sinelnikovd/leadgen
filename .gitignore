@@ -1,0 +1,6 @@
+/desing/
+/node_modules/
+*.sublime-gulp.cache
+*.glue
+*.zip
+*.log

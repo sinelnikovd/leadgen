@@ -1,0 +1,54 @@
+@import 'bourbon'
+@import 'helpers/*.*'
+@import 'basic/*.*'
+@import '../js/libs/**/*.scss'
+@import '../js/libs/**/*.sass'
+
+
+*
+	+placeholder
+		color: $c-placeholder
+		opacity: 1
+
+body
+	background-color: $c-white
+	color: $c-default
+	font: normal 14px/1.3em $helvetica
+	min-width: 1200px
+	overflow-x: hidden
+	position: relative
+
+	input
+		&:focus
+			&:required
+				&:invalid
+					color: $c-placeholder
+
+	textarea
+		&:focus
+			&:required
+				&:invalid
+					color: $c-placeholder
+
+
+.container
+	font-size: 30px
+	margin: 0 auto
+	max-width: 1200px
+	padding: 0 15px
+
+
+.hidden
+	display: none
+
+.sp-retina,
+.sp-hover,
+.sp-normal
+	display: inline-block
+
+
+@import './../blocks/**/*.sass'
+@import 'pages/*.*'
+
+//ALWAYS END
+@import 'basic/_media.sass'
